@@ -1,26 +1,28 @@
 {
-  "name": "express-eventsource",
-  "version": "0.0.3",
-  "description": "Server-sent events middleware for expressjs",
+  "name": "restify-eventsource",
+  "version": "1.0.0",
+  "description": "Server-sent events middleware for Restify",
   "main": "lib/sse.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/jinroh/express-eventsource.git"
+    "url": "git://github.com/jameswomack/restify-eventsource.git"
   },
   "keywords": [
     "server-sent-events",
     "sse",
     "event-source",
-    "express",
-    "expressjs",
+    "restify",
     "middleware"
   ],
   "author": "jinroh (Pierre Guilleminot)",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/jinroh/express-eventsource/issues"
+    "url": "https://github.com/jameswomack/restify-eventsource/issues"
+  },
+  "dependencies": {
+    "restify": "3.0.3"
   },
   "devDependencies": {
-    "express": "~3.3.3"
+    "mocha": "^2.2.5"
   }
 }

@@ -1,20 +1,20 @@
 # Express EventSource
 
-This express module creates a simple server-sent events room.
+This restify module creates a simple server-sent events room.
 
 http://www.w3.org/TR/eventsource/
 
 ## Installation
 
 ```sh
-$ npm install express-eventsource
+$ npm install restify-eventsource
 ```
 
 ## Example
 
 ```javascript
-var express = require('express');
-var eventsource = require('express-eventsource');
+var restify = require('restify');
+var eventsource = require('restify-eventsource');
 
 var sse = eventsource({
   connections: 2
@@ -22,7 +22,7 @@ var sse = eventsource({
 
 var broadcast = sse.sender('foo');
 
-var app = express()
+var app = restify()
   .use(sse.middleware())
   .listen(3000);
 
