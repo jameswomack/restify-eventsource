@@ -18,7 +18,7 @@
     "restify",
     "middleware"
   ],
-  "author": "jinroh (Pierre Guilleminot)",
+  "author": "jameswomack (James J. Womack)",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/jameswomack/restify-eventsource/issues"
@@ -27,7 +27,7 @@
     "restify": "3.0.3"
   },
   "devDependencies": {
-    "mocha": "^2.2.5",
-    "nodemon": "^1.3.7"
+    "mocha": "2.2.5",
+    "nodemon": "1.3.7"
   }
 }

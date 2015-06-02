@@ -15,7 +15,7 @@ server.on('uncaughtException', function (req, res, route, e) {
 });
 
 function bc(channelName) {
-  var broadcast = sse.sender('/' + channelName),
+  var broadcast = sse.sender(channelName),
       interval       = 1000
   // Send the time every `interval`
   setInterval(function() {
