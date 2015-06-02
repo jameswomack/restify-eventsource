@@ -5,7 +5,12 @@ var Path        = require('path'),
 var sse    = eventsource(),
     server = Restify.createServer()
 
+// Push to acceptable, need to inject middleware on top
+server.acceptable.push('text/event-stream')
+server.use(Restify.acceptParser(server.acceptable))
+server.use(Restify.gzipResponse())
 server.use(sse.middleware())
+
 server.get(/^\/?.*/, Restify.serveStatic({
   directory: Path.join(process.cwd(), '/public'),
     default: 'index.html'
