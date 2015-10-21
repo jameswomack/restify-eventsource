@@ -1,4 +1,4 @@
-# Express EventSource
+# Restify EventSource
 
 This restify module creates a simple server-sent events room.
 
