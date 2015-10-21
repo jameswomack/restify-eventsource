@@ -12,6 +12,10 @@ $ npm install restify-eventsource
 
 ## Example
 
+```
+npm run example
+```
+
 ```javascript
 var restify = require('restify');
 var eventsource = require('restify-eventsource');
@@ -30,8 +34,6 @@ setInterval(function() {
   broadcast({ bar: 'baz' }); // <=> sse.send({ bar: 'baz' }, 'foo')
 }, 2000);
 ```
-
-(see `/examples`)
 
 ## License
 
